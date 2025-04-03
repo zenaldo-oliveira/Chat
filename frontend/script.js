@@ -12,24 +12,21 @@ const user = { id: "", name: "", color: "" };
 const colors = [
   "aqua",
   "cadetblue",
-  "blue",
-  "coral",
-  "crimson",
-  "darkorange",
-  "deeppink",
+  "blueviolet",
+  "darkgoldenrod",
+  "cornflowerblue",
+  "darkkhaki",
+  "hotpink",
   "gold",
-  "greenyellow",
-  "indigo",
-  "lightseagreen",
-  "tomato",
+  "navy",
 ];
 
 let websocket;
 
 const createMessageSelfElement = (content) => {
   const div = document.createElement("div");
-  div.classList.add("message--self");
 
+  div.classList.add("message--self");
   div.innerHTML = content;
 
   return div;
